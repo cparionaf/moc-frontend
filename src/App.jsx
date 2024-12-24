@@ -61,7 +61,7 @@ function App() {
           }}
           disabled={loading}
         >
-          {loading ? 'Cargando...' : 'Obtener Datos con NET'}
+          {loading ? 'Cargando...' : 'Obtener Datos con Python'}
         </button>
 
         {/* Segundo botón */}
@@ -84,7 +84,7 @@ function App() {
 
       {/* Sección para mostrar resultados de la primera llamada */}
       <div style={{ marginBottom: '20px' }}>
-        {loading && <p>Cargando datos...</p>}
+        {loading && <p>Cargando datos con Python</p>}
         {error && <p style={{ color: 'red' }}>{error}</p>}
         {data && (
           <div style={{ marginTop: '20px' }}>
@@ -102,7 +102,7 @@ function App() {
 
       {/* Sección para mostrar resultados de la segunda llamada */}
       <div>
-        {secondLoading && <p>Cargando datos secundarios...</p>}
+        {secondLoading && <p>Cargando datos con Go...</p>}
         {secondError && <p style={{ color: 'red' }}>{secondError}</p>}
         {secondData && (
           <div style={{ marginTop: '20px' }}>
