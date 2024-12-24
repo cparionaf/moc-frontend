@@ -61,7 +61,7 @@ function App() {
           }}
           disabled={loading}
         >
-          {loading ? 'Cargando...' : 'Obtener Datos'}
+          {loading ? 'Cargando...' : 'Obtener Datos con NET'}
         </button>
 
         {/* Segundo botón */}
@@ -78,7 +78,7 @@ function App() {
           }}
           disabled={secondLoading}
         >
-          {secondLoading ? 'Cargando...' : 'Obtener Datos Secundarios'}
+          {secondLoading ? 'Cargando...' : 'Obtener Datos con Go'}
         </button>
       </div>
 
