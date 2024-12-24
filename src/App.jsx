@@ -17,7 +17,7 @@ function App() {
     try {
       setLoading(true)
       setError(null)
-      const response = await axios.get('https://api-net.poc-architecture.carlospariona.dev')
+      const response = await axios.get('https://api-net.poc-architecture.carlospariona.dev/region')
       setData(response.data)
     } catch (err) {
       setError('Error al obtener los datos: ' + err.message)
@@ -32,7 +32,7 @@ function App() {
       setSecondLoading(true)
       setSecondError(null)
       // Reemplaza esta URL con tu segundo endpoint
-      const response = await axios.get('https://api-go.poc-architecture.carlospariona.dev')
+      const response = await axios.get('https://api-go.poc-architecture.carlospariona.dev/region')
       setSecondData(response.data)
     } catch (err) {
       setSecondError('Error al obtener los datos secundarios: ' + err.message)
