@@ -17,7 +17,7 @@ function App() {
     try {
       setLoading(true)
       setError(null)
-      const response = await axios.get('https://api-net.poc-architecture.carlospariona.dev/info')
+      const response = await axios.get('https://api-python.poc-architecture.carlospariona.dev/info')
       setData(response.data)
     } catch (err) {
       setError('Error al obtener los datos: ' + err.message)
